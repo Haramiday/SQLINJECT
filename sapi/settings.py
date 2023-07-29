@@ -86,6 +86,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sapi.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework.Authentication.TokenAuthentication']
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
