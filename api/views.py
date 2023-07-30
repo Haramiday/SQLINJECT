@@ -7,6 +7,8 @@ from rest_framework.response import Response
 from sklearn.feature_extraction.text import CountVectorizer
 
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+
 
 
 
@@ -19,7 +21,7 @@ vectorizer = CountVectorizer(max_features=50, dtype = np.float32)
 X = vectorizer.fit_transform(df["Sentence"].values).toarray()
 
 
-@csrf_exempt
+@method_decorator(csrf_exempt, name='post')
 class Prediction(APIView):
     def post(self, request):
         data = request.data
