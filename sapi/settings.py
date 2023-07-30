@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ["https://sqlinjection.onrender.com/v1/predict/"]
+CSRF_TRUSTED_ORIGINS = ["https://sqlinjection.onrender.com/","https://sqlinjection.onrender.com/v1/predict/"]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
