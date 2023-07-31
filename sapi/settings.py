@@ -36,7 +36,7 @@ DATA = os.path.join(BASE_DIR, 'ml/data')
 SECRET_KEY = 'django-insecure-2+g@)8tvct-$qxld3+t_3362v$)0ilr4juk*+=am0=u*3-95o1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
