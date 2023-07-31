@@ -26,7 +26,7 @@ class Prediction(APIView):
     #authentication_classes = [SessionAuthentication, BasicAuthentication]
     def post(self, request):
         data = request.data
-        value = data['sentence']
+        value = data.dat.get('sentence')
         #print(value)
         
         #vectorize
