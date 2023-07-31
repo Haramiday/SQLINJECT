@@ -133,6 +133,8 @@ REST_FRAMEWORK = {
     ]
 }
 
+
+CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = ["https://sqlinjection.onrender.com/","https://sqlinjection.onrender.com/v1/predict/"]
 
 # Internationalization
@@ -150,7 +152,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-CORS_ORIGIN_ALLOW_ALL = True
+
 
 STATIC_URL = 'static/'
 
