@@ -126,6 +126,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+
 CSRF_TRUSTED_ORIGINS = ["https://sqlinjection.onrender.com/","https://sqlinjection.onrender.com/v1/predict/"]
 
 # Internationalization
