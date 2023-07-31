@@ -27,7 +27,8 @@ class Prediction(APIView):
     def post(self, request):
         data = request.data
         #value = request.data.get('sentence')
-        value = data['_content']
+        #value = data['_content']
+        value = data['sentence']
         #print(value)
         
         #vectorize
